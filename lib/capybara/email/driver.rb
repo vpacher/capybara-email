@@ -80,7 +80,7 @@ class Capybara::Email::Driver < Capybara::Driver::Base
   #
   # @return String
   def raw
-    email.body.encoded
+    email.encoded
   end
 
   private
