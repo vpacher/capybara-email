@@ -69,7 +69,7 @@ class Capybara::Email::Driver < Capybara::Driver::Base
   #
   # @return String
   def source
-    if email.mime_type == 'text/plain'
+    if email.content_type == 'text/plain'
       convert_to_html(raw)
     else
       raw
